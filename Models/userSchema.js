@@ -4,14 +4,15 @@ const userSchema = new mongoose.Schema({
   name: {
     type: String,
   },
-  email: {
+  age: {
     type: String,
   },
-  password: {
+  mark: {
     type: String,
   },
-  id: {
-    type: String,
+  profilePic: {
+    type: String, // URL or file path to the uploaded file
   },
 });
+
 module.exports = mongoose.model("User", userSchema);
